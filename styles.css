@@ -1,0 +1,392 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Display 'main' and 'aside' with space in between */
+}
+
+main {
+    flex: 1; /* Allow 'main' to take available space */
+    margin: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.main-container {
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.blue-line {
+    border: 2px solid #007bff;
+    margin: 0 auto;
+    width: 50px;
+}
+
+/* Set a background color for the body */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the navigation menu */
+.navbar, .secondary-navbar {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+}
+
+.navbar ul, .secondary-navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li, .secondary-navbar ul li {
+    margin: 0 20px;
+}
+
+/* Style sections */
+main, aside {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+header {
+    background-color: white;
+    color: black;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the logo */
+.logo img {
+    width: 200px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 20px; /* Add margin for spacing */
+}
+
+/* Style the header sections (Book Consultation, Call Us, Email Us) */
+.header-sections {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center the sections horizontally */
+}
+
+.header-sections section {
+    margin-right: 20px; /* Add margin between sections */
+    text-align: center;
+    margin-bottom: 10px; /* Add margin between sections vertically */
+}
+
+/* Style the country dropdown */
+.country-dropdown {
+    display: flex;
+    align-items: center;
+}
+
+/* Style the label for the country dropdown */
+.country-dropdown label {
+    margin-right: 10px; /* Add margin for spacing */
+}
+
+/* Style the select element */
+.country-dropdown select {
+    width: 200px; /* Adjust the width as needed */
+    padding: 5px;
+}
+
+.navbar {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Style the dropdown menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    z-index: 1;
+    top: 100%; /* Position the dropdown below the parent item */
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    padding: 10px 15px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+/* Highlight the dropdown menu items on hover */
+.dropdown-content a:hover {
+    background-color: #555;
+}
+.secondary-navbar {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+.secondary-navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; /* Adjust alignment */
+}
+
+.secondary-navbar ul li {
+    position: relative;
+}
+
+.secondary-navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    text-align: center;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.footer-subsection {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+}
+
+.footer-subsection h4 {
+    margin: 10px 0;
+    flex: 1;
+}
+
+.footer-subsection ul {
+    list-style: none;
+    padding: 0;
+    flex: 1;
+}
+
+.footer-subsection li {
+    margin: 5px 0;
+}
+.aside-container {
+    flex: 0 0 30%; /* Set a fixed width for the aside */
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.aside-container h2 {
+    margin-bottom: 10px;
+}
+
+/* Styles for the form */
+.enquiry-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.owl-carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.owl-carousel .item {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 10px; /* Adjust the margin as needed */
+}
+
+.owl-carousel img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar ul, .secondary-navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul li, .secondary-navbar ul li {
+        margin: 10px 0;
+    }
+
+    main, aside {
+        width: 100%;
+    }
+    header {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+
+    .logo img {
+        margin-right: 0; /* Remove margin for smaller screens */
+        margin-bottom: 10px; /* Add margin below the logo */
+    }
+
+    .header-sections section {
+        margin-right: 0; /* Remove right margin for smaller screens */
+    }
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+    .secondary-navbar ul {
+        flex-direction: column;
+    }
+
+    .secondary-navbar ul li {
+        margin: 10px 0;
+    }
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+    }
+
+    .footer-subsection {
+        margin: 10px 0;
+    }
+
+    .container {
+        flex-direction: column; /* Stack 'main' and 'aside' vertically on smaller screens */
+    }
+
+    main {
+        flex: 1; /* Allow 'main' to take full width on smaller screens */
+        margin: 10px 0;
+    }
+        
+    .aside-container {
+            flex: 0 0 100%; /* Make the aside full width on smaller screens */
+            margin-top: 20px;
+        }
+}
